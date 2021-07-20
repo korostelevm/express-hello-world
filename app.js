@@ -14,7 +14,7 @@ const publish = async function (msg) {
      MessageAttributes: {
        app_id: {
          DataType: "String",
-         StringValue: 'korostelevm-helloworld',
+         StringValue: 'korostelevm-express-hello-world',
        },
      },
    };

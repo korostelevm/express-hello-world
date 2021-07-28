@@ -6,7 +6,9 @@ const VERSION_FILENAME='./.git/refs/heads/main'
 
 app.get('/', (req, res) => {
   console.log('[hello-world] root handler called')
-  res
+  console.log(req.headers)
+
+ res
     .set('x-powered-by', 'cyclic.sh')
     .send('<h1>Hello Worlhhhhhhd!</h1>')
     .end()

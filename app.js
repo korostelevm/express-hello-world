@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
  res
     .set('x-powered-by', 'cyclic.sh')
-    .send('<h1>Hello Worlhhhhhhd!</h1>')
+    .send('<h1>Hello s!</h1>')
     .end()
 })
 

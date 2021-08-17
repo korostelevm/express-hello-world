@@ -1,37 +1,33 @@
 const express = require('express')
 const app = express()
 const fs = require('fs')
- 
-const VERSION_FILENAME='./.git/refs/heads/main'
+var JiraApi = require('jira-client');
 
-app.get('/', (req, res) => {
-  console.log('[hello-world] root handler called')
+var jira = new JiraApi({
+  protocol: 'https',
+  host: 'coldlambda.atlassian.net',
+  username: process.env.JIRA_USER,
+  password: process.env.JIRA_TOKEN,
+  apiVersion: '2',
+  strictSSL: true
+});
 
- res
-    .set('x-powered-by', 'cyclic.sh')
-    .send('<h1>Hello s!</h1>')
-    .end()
-})
+app.use('*', async (req,res) => {
+ try{
+   console.log(process.env)
+   console.log(jira)
+   var sprints = await jira.getUsers()
 
-app.use('*', (req,res) => {
-  console.log('[hello-world] Star handler called')
-  let version = 'unknown'
-  if (fs.existsSync(VERSION_FILENAME)) {
-    version = fs.readFileSync(VERSION_FILENAME).toString().substr(0,8)
-  }
+}catch(e){
+  console.log(e)
+  console.log(e.response.data)
+}
+
+
   res
     .set('x-powered-by', 'cyclic.sh')
     .json({
       msg: "Not strickly part of the hello world but you get the picture.",
-      version,
-      at: new Date().toISOString(),
-      method: req.method,
-      hostname: req.hostname,
-      ip: req.ip,
-      path: req.params[0],
-      query: req.query,
-      headers: req.headers,
-      cookies: req.cookies,
     })
     .end()
 })

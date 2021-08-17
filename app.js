@@ -42,7 +42,7 @@ var result = {a:'none'}
       "summary": req.body.issue.title,
       "description": req.body.issue.body,
       // "parent": {
-      //   "key": "HELLO"
+      //   "key":sadf "HELLO"
       // },
       "issuetype": {
         "id": "10001"

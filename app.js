@@ -161,6 +161,7 @@ var result = {a:'none'}
     return res
   .set('x-powered-by', 'cyclic.sh')
   .json(e.response.body)
+  // .json(e.response.body)
   .end()
     // console.log(e.response.data)
   }

@@ -39,7 +39,7 @@ var result = {a:'none'}
    var r = await jira.addNewIssue({
     "update": {},
     "fields": {
-      "summary": req.body.issue.title,
+      "summary": 'from github | '+req.body.issue.title,
       "description": req.body.issue.body,
       // "parent": {
       //   "key":sadf "HELLO"

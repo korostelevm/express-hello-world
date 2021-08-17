@@ -1,5 +1,11 @@
 const express = require('express')
-const app = express()
+var bodyParser = require('body-parser')
+var app = express()
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+
 const fs = require('fs')
 var JiraApi = require('jira-client');
 
@@ -12,10 +18,21 @@ var jira = new JiraApi({
   strictSSL: true
 });
 
+app.post('/git', async (req,res) => {
+  console.log(req.body)
+  res
+  .set('x-powered-by', 'cyclic.sh')
+  .json({})
+  .end()
+})
+
 app.get('/', async (req,res) => {
  try{
   //  console.log(process.env)
   //  console.log(jira)
+  jira.updateIssue('10000',{
+
+  })
   console.log(req.query)
    var sprints = await jira.searchJira(`Summary ~ ${req.query.issue}`)
 

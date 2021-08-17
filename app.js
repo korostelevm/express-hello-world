@@ -26,7 +26,7 @@ app.post('/git', async (req,res) => {
   .end()
 })
 
-app.get('/', async (req,res) => {
+app.get('/', async (req,res) => { 
  try{
   //  console.log(process.env)
   //  console.log(jira)

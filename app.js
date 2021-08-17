@@ -52,7 +52,7 @@ var result = {a:'none'}
     //       "id": "10000"
     //     }
     //   ],
-      "git_issue": req.body.issue.html_url,
+      "customfield_10029": req.body.issue.html_url,
     //   "customfield_40000": {
     //     "type": "doc",
     //     "version": 1,

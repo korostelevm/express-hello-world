@@ -26,9 +26,7 @@ app.use('*', async (req,res) => {
 
   res
     .set('x-powered-by', 'cyclic.sh')
-    .json({
-      msg: "Not strickly part of the hello world but you get the picture.",
-    })
+    .json(sprints)
     .end()
 })
 

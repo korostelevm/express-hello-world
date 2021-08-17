@@ -26,7 +26,7 @@ var result = {a:'none'}
   // console.log(JSON.parse(req.body))
   console.log(req.headers)
   if(!req.body.issue){
-    return res.send('not issue | '+ req.body)
+    return res.send('not issue | '+ JSON.stringify(req.body))
   }
   try{
     result = req.body

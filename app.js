@@ -12,15 +12,16 @@ var jira = new JiraApi({
   strictSSL: true
 });
 
-app.use('*', async (req,res) => {
+app.get('/', async (req,res) => {
  try{
-   console.log(process.env)
-   console.log(jira)
-   var sprints = await jira.getUsers()
+  //  console.log(process.env)
+  //  console.log(jira)
+  console.log(req.query)
+   var sprints = await jira.searchJira(`Summary ~ ${req.query.issue}`)
 
 }catch(e){
-  console.log(e)
-  console.log(e.response.data)
+  console.log(e.response.body)
+  // console.log(e.response.data)
 }
 
 

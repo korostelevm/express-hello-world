@@ -28,7 +28,6 @@ app.post('/git', async (req,res) => {
   
     // })
   
-  
    var r = await jira.addNewIssue({
     "update": {},
     "fields": {
@@ -160,12 +159,16 @@ app.post('/git', async (req,res) => {
     console.log(r)
   
   }catch(e){
-    console.log(e.response.body)
+    // console.log()
+    return res
+  .set('x-powered-by', 'cyclic.sh')
+  .json(e.response.body)
+  .end()
     // console.log(e.response.data)
   }
 
   
-  res
+  return res
   .set('x-powered-by', 'cyclic.sh')
   .json({})
   .end()

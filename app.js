@@ -6,8 +6,8 @@ const VERSION_FILENAME = './.git/refs/heads/main'
 
 app.get('/', (req, res) => {
 	// console.log('TESTING THIS OUT');
-	console.log('req:', req);
-	console.log('res:', res);
+	// console.log('req:', req);
+	// console.log('res:', res);
 	console.log('env:', process.env);
 
 	res

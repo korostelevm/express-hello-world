@@ -1,10 +1,28 @@
 const express = require('express')
 const app = express()
 const fs = require('fs')
+var AWS = require('aws-sdk');
 
 const VERSION_FILENAME = './.git/refs/heads/main'
 
 app.get('/', (req, res) => {
+
+	AWS.config.update({ region: 'us-east-1' });
+	s3 = new AWS.S3({ apiVersion: '2006-03-01' });
+
+	var bucketParams = {
+		Bucket: 'forstmeier-test',
+	};
+
+	// Call S3 to obtain a list of the objects in the bucket
+	s3.listObjects(bucketParams, function (err, data) {
+		if (err) {
+			console.log("Error", err);
+		} else {
+			console.log("Success", data);
+		}
+	});
+
 	// console.log('TESTING THIS OUT');
 	// console.log('req:', req);
 	// console.log('res:', res);

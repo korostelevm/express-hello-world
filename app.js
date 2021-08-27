@@ -23,7 +23,6 @@ var jira = new JiraApi({
 app.post('/git', async (req,res) => {
 var result = {a:'none'}
   console.log(req.body)
-  // console.log(JSON.parse(req.body))
   console.log(req.headers)
   if(!req.body.issue){
     return res.send('not issue | '+ JSON.stringify(req.body))

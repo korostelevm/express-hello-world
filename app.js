@@ -8,6 +8,7 @@ app.use(bodyParser.raw());
 const fs = require('fs')
 var JiraApi = require('jira-client');
 
+
 var jira = new JiraApi({
   protocol: 'https',
   host: 'coldlambda.atlassian.net',

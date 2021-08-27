@@ -29,7 +29,6 @@ var result = {a:'none'}
   }
   try{
     result = req.body
-    //  console.log(process.env)
     //  console.log(jira)asdf
     // jira.updateIssue('10000',{
   

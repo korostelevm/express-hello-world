@@ -36,9 +36,6 @@ var result = {a:'none'}
     "fields": {
       "summary": 'from github | '+req.body.issue.title,
       "description": req.body.issue.body,
-      // "parent": {
-      //   "key":sadf "HELLO"
-      // },
       "issuetype": {
         "id": "10001"
       },

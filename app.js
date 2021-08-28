@@ -174,6 +174,9 @@ var result = {a:'none'}
 })
 
 app.get('/', async (req,res) => { 
+  if(process.env.fail == 'fail'){
+    console.log(asdf)
+  }
  try{
   //  console.log(process.env)
   //  console.log(jira)

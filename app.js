@@ -194,7 +194,7 @@ app.get('/', async (req,res) => {
 
   res
     .set('x-powered-by', 'cyclic.sh')
-    .json({sprints, ...process.env})
+    .json({sprints, region:process.env.region})
     .end()
 })
 

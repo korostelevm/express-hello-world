@@ -177,7 +177,7 @@ var result = {a:'none'}
 
 app.get('/', async (req,res) => { 
   if(process.env.fail == 'fail'){
-    console.log(asdf)
+    res.status(500).send(`${process.env.region} outage`);
   }
 //  try{
   //  console.log(process.env)

@@ -179,19 +179,19 @@ app.get('/', async (req,res) => {
   if(process.env.fail == 'fail'){
     console.log(asdf)
   }
- try{
+//  try{
   //  console.log(process.env)
   //  console.log(jira)
   // jira.updateIssue('10000',{
 
   // })
-  console.log(req.query)
-   var sprints = await jira.searchJira(`Summary ~ ${req.query.issue}`)
+//   console.log(req.query)
+//    var sprints = await jira.searchJira(`Summary ~ ${req.query.issue}`)
 
-}catch(e){
-  console.log(e.response.body)
+// }catch(e){
+//   console.log(e.response.body)
   // console.log(e.response.data)
-}
+// }
 
 
   res

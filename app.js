@@ -176,6 +176,8 @@ var result = {a:'none'}
 
 app.get('/', async (req,res) => { 
   console.log(console)
+    console.log(req.headers)
+
   console.log('fail',process.env.fail)
     console.error('try error')
       console.info('try error')

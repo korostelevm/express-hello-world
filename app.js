@@ -4,8 +4,7 @@ var app = express()
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(bodyParser.raw());
-
-
+console = new console.Console(process.stdout,process.stderr, {colorMode:true})
 
 const fs = require('fs')
 var JiraApi = require('jira-client');

@@ -176,6 +176,7 @@ var result = {a:'none'}
 
 app.get('/', async (req,res) => { 
   console.log(console)
+  console.log(req.query)
     console.log(req.headers)
 
   console.log('fail',process.env.fail)
@@ -201,7 +202,7 @@ app.get('/', async (req,res) => {
 
   res
     .set('x-powered-by', 'cyclic.sh')
-    .json({region:process.env.region})
+    .json({region:process.env.region, aaa:req.headers})
     .end()
 })
 

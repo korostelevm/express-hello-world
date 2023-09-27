@@ -1,9 +1,50 @@
-<mxfile host="app.diagrams.net" modified="2023-09-27T13:15:02.128Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.8.2" etag="jwj3xhucjXCAxB1Nzzol" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-27T13:26:34.318Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="-dMoExSLVzhOmvbDFAJE" version="21.8.2" type="github">
   <diagram name="Page-1" id="rkm2gJWw7Tg2-EYTBpaS">
-    <mxGraphModel>
+    <mxGraphModel dx="2420" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wGySV2XfdkuFwHTz12Mb-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-4" value="Version Control" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/github-128.png" vertex="1" parent="1">
+          <mxGeometry x="-10" y="390" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-11" value="AWS Account" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="570" width="550" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-7" value="Cyclic Managed Resources" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wGySV2XfdkuFwHTz12Mb-11">
+          <mxGeometry x="20" y="40" width="410" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-10" value="Amazon API Gateway" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.api_gateway;" vertex="1" parent="wGySV2XfdkuFwHTz12Mb-7">
+          <mxGeometry x="80" y="30" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-19" value="Amazon CloudWatch" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.cloudwatch;" vertex="1" parent="wGySV2XfdkuFwHTz12Mb-7">
+          <mxGeometry x="150" y="30" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-20" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" vertex="1" parent="wGySV2XfdkuFwHTz12Mb-7">
+          <mxGeometry x="220" y="30" width="60" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-21" value="Amazon DynamoDB" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.dynamodb;" vertex="1" parent="wGySV2XfdkuFwHTz12Mb-7">
+          <mxGeometry x="290" y="30" width="60" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-23" value="AWS Lambda" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.lambda;" vertex="1" parent="wGySV2XfdkuFwHTz12Mb-7">
+          <mxGeometry x="10" y="30" width="60" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-24" value="Amazon Route 53" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.route_53;" vertex="1" parent="wGySV2XfdkuFwHTz12Mb-7">
+          <mxGeometry x="10" y="140" width="60" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-25" value="AWS Certificate Manager" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.certificate_manager_3;" vertex="1" parent="wGySV2XfdkuFwHTz12Mb-7">
+          <mxGeometry x="80" y="140" width="60" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-37" value="Cyclic Orchestration" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="390" width="880" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wGySV2XfdkuFwHTz12Mb-39" value="Release Management" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.dashboard" vertex="1" parent="wGySV2XfdkuFwHTz12Mb-37">
+          <mxGeometry x="50" y="40" width="50" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
